@@ -1,28 +1,42 @@
+/* >>> No need for this file
 
- .centered-item{
-    align-items: center;
-    text-align: center;
- }
 
- .head-image{
+/* 
+.head-image{
 
-  width: 65%;
-  
- }
+   width: 65%;
+   
+  } */
 
- .juiceItem
+
+  /* .juiceItem
  {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     border-radius: 10%;
     margin: 0 20px;
-    
- }
+ } */
+
+ /* .centered-item{
+    align-items: center;
+    text-align: center;
+ } */
+ 
 
 
- .productsParent{
+ /* .productsParent{
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top: 1.5%;
- }
+ } */
+ 
+
+   /* body{
+
+   background-color: #1D3557;
+
+   font-weight:normal !important;
+ }  */
+
+ 

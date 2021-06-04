@@ -1,33 +1,54 @@
-import "./App.css" ;
-import products from "./products";
+// //styling
+// import "./App.css" ;
+// import JuiceList from "../src/components/JuiceList";
 
-const dataArray = products.map(product =>
-        
-<div>
-        <img className="juiceItem" src={product.pic} alt="menu"/>
-        <h4>{product.name}</h4>
-        <p>{product.price} KD</p>  
-</div>
-  )
+// // components
+// import Home from "../src/components/Home";
+
+// function App() {
+
+//   return (
+//     <div className="mainDiv">
+//       <Home/>
+//     <div className="productsParent">
+//       <JuiceList/>
+//       </div>
+//       </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+// library
+import {ThemeProvider} from "styled-components";
+
+// styling
+import "./App.css" ;
+import JuiceList from "../src/components/JuiceList";
+import { theme, ProductsParent, GlobalStyle} from "./styles";
+
+// components
+import Home from "../src/components/Home";
+
+
 
 function App() {
 
   return (
-   <div className="centered-item">
-      
-    <h1>🥤 JUICE LAB</h1>
+    <ThemeProvider theme={theme} >
+      <Home />
+      <GlobalStyle />
 
-    <h4>Be healthy and enjoy your juice</h4>
-
-    <img
-    src="1st.jpg" alt="juiceShop" 
-    className="head-image"/>
-
-      <div className="productsParent">
-      {dataArray}
-      </div>
-
-   </div>
+      <ProductsParent>
+      <JuiceList />
+      </ProductsParent>
+      </ThemeProvider>
   );
 }
 

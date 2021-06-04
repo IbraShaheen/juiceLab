@@ -1,8 +1,10 @@
+import {CenteredItem} from "../styles";
+
 
 const Home = () => {
 
   return(
-    <div className="centered-item">
+    <CenteredItem>
       
     <h1>🥤 JUICE LAB</h1>
 
@@ -11,7 +13,7 @@ const Home = () => {
     <img
     src="1st.jpg" alt="juiceShop" 
     className="head-image"/>
-   </div>
+   </CenteredItem>
   )
 
 }
